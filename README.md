@@ -13,10 +13,11 @@ The database used is a local docker containerised instance of [`postgres`](https
 ## Usage
 
   1. clone the repo
-  2. build a custom docker image using the [`Dockerfile`](./Dockerfile) using the command `docker build -t <name> .` or pulling the image from dockerhub and copying the [`init.sql`](./init.sql) in `docker-entrypoint-initdb.d/` directory of the container using the docker cp command
-  3. create a container or start an existing container containg the `init.sql` with the required environment variables (see Description for more)
-  4. start the server using either `npm run start` for using the sample.env with the test environment variables or `node --env-file=<name> app/app.js` for using custom environment variables
-  5. you're all set to go for making requests to `localhost:PORT/files`
+  2. run `npm i`
+  3. build a custom docker image using the [`Dockerfile`](./Dockerfile) using the command `docker build -t <name> .` or pulling the image from dockerhub and copying the [`init.sql`](./init.sql) in `docker-entrypoint-initdb.d/` directory of the container using the docker cp command
+  4. create a container or start an existing container containg the `init.sql` with the required environment variables (see Description for more)
+  5. start the server using either `npm run start` for using the sample.env with the test environment variables or `node --env-file=<name> app/app.js` for using custom environment variables
+  6. you're all set to go for making requests to `localhost:PORT/files`
 
 ## Description
 
