@@ -1,0 +1,19 @@
+{
+  "name": "task-3",
+  "version": "1.0.0",
+  "description": "a program to create an api for crud operations with files, that interacts with a local containerised docker container of postgres database",
+  "main": "app/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec 'node --env-file=.env app/app.js'",
+    "start": "node --env-file=sample.env app/app.js"
+  },
+  "author": "Suprit S Jahagirdar",
+  "license": "ISC",
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
